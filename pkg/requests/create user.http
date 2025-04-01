@@ -1,0 +1,11 @@
+POST localhost:5005/create
+Content-Type: application/json
+
+{
+  "full_name":"jojo jojov jojojovich",
+  "birth_date": "19.03.2025",
+  "phone":"918237514",
+  "address":"khonai man",
+  "role_id":1,
+"cite_id":1
+}

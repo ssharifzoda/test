@@ -1,0 +1,2 @@
+DELETE localhost:5005/drop?user_id=1
+

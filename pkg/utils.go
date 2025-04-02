@@ -2,6 +2,7 @@ package pkg
 
 import (
 	"encoding/json"
+	"github.com/spf13/viper"
 	"log"
 	"net/http"
 )
@@ -19,4 +20,10 @@ func Response(w http.ResponseWriter, data interface{}) {
 	}
 	w.WriteHeader(http.StatusOK)
 	w.Write(date)
+}
+
+func InitConfig() error {
+	viper.AddConfigPath("internal/config")
+	viper.SetConfigName("config")
+	return viper.ReadInConfig()
 }
